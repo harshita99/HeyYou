@@ -23,13 +23,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void drawingpad(View view ){
         Intent k = new Intent(this,MainDraw.class);
-        //i.putExtra("Message", "Yo yo");
         startActivity(k);
 
     }
     public void mentaltest(View view ){
         Intent j = new Intent(this,MentalTest.class);
-        //i.putExtra("Message", "Yoyo");
         startActivity(j);
     }
 

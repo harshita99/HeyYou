@@ -34,9 +34,9 @@
 
 
     <Button
-        android:background="#ffc371"
+        android:background="@drawable/rounded_button"
         android:textColor="@android:color/white"
-        android:padding="10dp"
+        android:padding="15dp"
         android:layout_gravity="center"
         android:textAlignment="center"
         android:layout_marginTop="30dp"
@@ -49,9 +49,9 @@
     </Button>
 
     <Button
-        android:background="#ffc371"
+        android:background="@drawable/rounded_button"
         android:textColor="@android:color/white"
-        android:padding="10dp"
+        android:padding="15dp"
         android:layout_gravity="center"
         android:textAlignment="center"
         android:layout_marginTop="30dp"
@@ -64,10 +64,10 @@
     </Button>
 
     <Button
-        android:background="#ffc371"
+        android:background="@drawable/rounded_button"
         android:textStyle="bold"
         android:textColor="@android:color/white"
-        android:padding="10dp"
+        android:padding="15dp"
         android:layout_gravity="center"
         android:textAlignment="center"
         android:layout_marginTop="30dp"
@@ -80,9 +80,9 @@
 
 
     <Button
-        android:background="#ffc371"
+        android:background="@drawable/rounded_button"
         android:textColor="@android:color/white"
-        android:padding="10dp"
+        android:padding="15dp"
         android:layout_gravity="center"
         android:textAlignment="center"
         android:layout_marginTop="40dp"
