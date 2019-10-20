@@ -9,8 +9,7 @@ import android.widget.RadioButton;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-    Integer i1=0;
-    String s="0";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,80 +17,25 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void goToNextScreen(View view){
-        Intent i = new Intent(this,Next.class);
-        i.putExtra("Score", i1);
-        startActivity(i);
+    public void trackmood(View view ){
+
     }
 
-    public void onRadioButtonClicked(View view) {
-        // Is the button now checked?
-        Context context;
-        boolean checked = ((RadioButton) view).isChecked();
+    public void drawingpad(View view ){
+        Intent k = new Intent(this,DrawingPad.class);
+        //i.putExtra("Message", "Yo yo");
+        startActivity(k);
 
-
-        // Check which radio button was clicked
-        switch(view.getId()) {
-            case R.id.r1:
-                if (checked)
-                    i1+=1;
-                    break;
-            case R.id.r2:
-                if (checked)
-                    // Ninjas rule
-                    break;
-            case R.id.r3:
-                if (checked)
-                    // Ninjas rule
-                    break;
-            case R.id.r4:
-                if (checked)
-                    // Ninjas rule
-                    break;
-            case R.id.r5:
-                if (checked)
-                    // Ninjas rule
-                    break;
-            case R.id.rr1:
-                if (checked)
-                    i1+=1;
-                break;
-            case R.id.rr2:
-                if (checked)
-                    // Ninjas rule
-                    break;
-            case R.id.rr3:
-                if (checked)
-                    // Ninjas rule
-                    break;
-            case R.id.rr4:
-                if (checked)
-                    // Ninjas rule
-                    break;
-            case R.id.rr5:
-                if (checked)
-                    // Ninjas rule
-                    break;
-            case R.id.rrr1:
-                if (checked)
-                    i1+=1;
-                break;
-            case R.id.rrr2:
-                if (checked)
-                    // Ninjas rule
-                    break;
-            case R.id.rrr3:
-                if (checked)
-                    // Ninjas rule
-                    break;
-            case R.id.rrr4:
-                if (checked)
-                    // Ninjas rule
-                    break;
-            case R.id.rrr5:
-                if (checked)
-                    // Ninjas rule
-                    break;
-        }
     }
+    public void mentaltest(View view ){
+        Intent j = new Intent(this,MentalTest.class);
+        //i.putExtra("Message", "Yoyo");
+        startActivity(j);
+    }
+
+    public void journal(View view ){
+
+    }
+
+
 }

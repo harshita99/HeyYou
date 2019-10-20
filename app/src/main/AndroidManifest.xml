@@ -18,6 +18,9 @@
         </activity>
         <activity android:name=".Next">
         </activity>
+        <activity android:name=".MentalTest">
+        </activity>
+        <activity android:name=".DrawingPad"></activity>
     </application>
 
 </manifest>

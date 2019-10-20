@@ -1,8 +1,17 @@
 package com.example.dopamineproject;
 
 import android.graphics.Path;
+import android.os.Bundle;
 
-public class DrawingPad {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class DrawingPad extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_drawing_pad);
+    }
 
     public int color;
     public boolean emboss;
