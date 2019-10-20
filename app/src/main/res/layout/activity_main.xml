@@ -32,20 +32,6 @@
         android:layout_height="wrap_content"
         android:src="@drawable/ic_smile"></ImageView>
 
-    <Button
-        android:background="#ffc371"
-        android:textColor="@android:color/white"
-        android:padding="10dp"
-        android:layout_gravity="center"
-        android:textAlignment="center"
-        android:layout_marginTop="40dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="How was your day?"
-        android:id="@+id/journalbtn"
-        android:onClick="journal"
-        android:textStyle="bold">
-    </Button>
 
     <Button
         android:background="#ffc371"
@@ -92,5 +78,20 @@
         android:onClick="trackmood">
     </Button>
 
+
+    <Button
+        android:background="#ffc371"
+        android:textColor="@android:color/white"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Helpline"
+        android:id="@+id/journalbtn"
+        android:onClick="journal"
+        android:textStyle="bold">
+    </Button>
 
 </LinearLayout>

@@ -5,13 +5,7 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class DrawingPad extends AppCompatActivity {
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_drawing_pad);
-    }
+public class DrawingPad{
 
     public int color;
     public boolean emboss;
@@ -26,7 +20,4 @@ public class DrawingPad extends AppCompatActivity {
         this.strokeWidth = strokeWidth;
         this.path = path;
     }
-
-
-
 }

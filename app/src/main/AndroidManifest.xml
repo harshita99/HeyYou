@@ -20,7 +20,7 @@
         </activity>
         <activity android:name=".MentalTest">
         </activity>
-        <activity android:name=".DrawingPad"></activity>
+        <activity android:name=".MainDraw"></activity>
     </application>
 
 </manifest>

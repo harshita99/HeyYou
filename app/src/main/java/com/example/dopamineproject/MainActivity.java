@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void drawingpad(View view ){
-        Intent k = new Intent(this,DrawingPad.class);
+        Intent k = new Intent(this,MainDraw.class);
         //i.putExtra("Message", "Yo yo");
         startActivity(k);
 
