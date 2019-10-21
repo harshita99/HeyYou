@@ -23,7 +23,15 @@ public class MainActivity extends AppCompatActivity {
         music.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mp.start();
+
+                if (!mp.isPlaying()) {
+                    mp.start();
+                    mp.setLooping(true);
+
+                }
+
+                else
+                    mp.pause();
             }
         });
     }

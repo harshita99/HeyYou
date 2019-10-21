@@ -25,16 +25,18 @@
         app:layout_constraintTop_toTopOf="parent">
     </TextView>
 
+    <Button
+        android:id="@+id/music"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:background="@android:drawable/ic_lock_silent_mode_off" />
+
     <ImageView
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_smile"></ImageView>
-
-    <Button
-        android:id="@+id/music"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
 
     <Button
@@ -81,7 +83,6 @@
         android:id="@+id/moodtrackbtn"
         android:onClick="trackmood">
     </Button>
-
 
     <Button
         android:background="@drawable/rounded_button"
