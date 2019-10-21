@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -16,7 +21,7 @@
         android:textAlignment="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Choose answers from options 1 to 5 denoting not at all, just a little, somewhat, moderately, quite a lot and very much respectively"
+        android:text="Choose answers from options : 1 to 5 denoting not at all, just a little, moderately, quite a lot and very much respectively"
         android:textColor="@color/colorPrimaryDark" />
 
     <TextView
@@ -39,7 +44,7 @@
 
         >
 
-        <RadioButton android:id="@+id/r1"
+        <RadioButton android:id="@+id/r11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="1"
@@ -47,28 +52,28 @@
             android:layout_marginLeft="80dp"
             android:onClick="onRadioButtonClicked"/>
 
-        <RadioButton android:id="@+id/r2"
+        <RadioButton android:id="@+id/r12"
             android:layout_marginLeft="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="2"
             android:onClick="onRadioButtonClicked"/>
 
-        <RadioButton android:id="@+id/r3"
+        <RadioButton android:id="@+id/r13"
             android:layout_marginLeft="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="3"
             android:onClick="onRadioButtonClicked"/>
 
-        <RadioButton android:id="@+id/r4"
+        <RadioButton android:id="@+id/r14"
             android:layout_marginLeft="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="4"
             android:onClick="onRadioButtonClicked"/>
 
-        <RadioButton android:id="@+id/r5"
+        <RadioButton android:id="@+id/r15"
             android:layout_marginLeft="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -94,35 +99,35 @@
         android:textAlignment="center"
         >
 
-        <RadioButton android:id="@+id/rr1"
+        <RadioButton android:id="@+id/r21"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="1"
             android:layout_marginLeft="80dp"
             android:onClick="onRadioButtonClicked"/>
 
-        <RadioButton android:id="@+id/rr2"
+        <RadioButton android:id="@+id/r22"
             android:layout_marginLeft="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="2"
             android:onClick="onRadioButtonClicked"/>
 
-        <RadioButton android:id="@+id/rr3"
+        <RadioButton android:id="@+id/r23"
             android:layout_marginLeft="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="3"
             android:onClick="onRadioButtonClicked"/>
 
-        <RadioButton android:id="@+id/rr4"
+        <RadioButton android:id="@+id/r24"
             android:layout_marginLeft="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="4"
             android:onClick="onRadioButtonClicked"/>
 
-        <RadioButton android:id="@+id/rr5"
+        <RadioButton android:id="@+id/r25"
             android:layout_marginLeft="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -147,35 +152,35 @@
         android:baselineAligned="true"
         android:textAlignment="center">
 
-        <RadioButton android:id="@+id/rrr1"
+        <RadioButton android:id="@+id/r31"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="1"
             android:layout_marginLeft="80dp"
             android:onClick="onRadioButtonClicked"/>
 
-        <RadioButton android:id="@+id/rrr2"
+        <RadioButton android:id="@+id/r32"
             android:layout_marginLeft="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="2"
             android:onClick="onRadioButtonClicked"/>
 
-        <RadioButton android:id="@+id/rrr3"
+        <RadioButton android:id="@+id/r33"
             android:layout_marginLeft="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="3"
             android:onClick="onRadioButtonClicked"/>
 
-        <RadioButton android:id="@+id/rrr4"
+        <RadioButton android:id="@+id/r34"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="4"
             android:layout_marginLeft="10dp"
             android:onClick="onRadioButtonClicked"/>
 
-        <RadioButton android:id="@+id/rrr5"
+        <RadioButton android:id="@+id/r35"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="5"
@@ -183,7 +188,266 @@
             android:onClick="onRadioButtonClicked"/>
 
     </RadioGroup>
+    <TextView
+        android:paddingTop="20dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="I feel like I have no one ">
 
+    </TextView>
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="true"
+        android:textAlignment="center">
+
+        <RadioButton android:id="@+id/r41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:layout_marginLeft="80dp"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton android:id="@+id/r42"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton android:id="@+id/r43"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton android:id="@+id/r44"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:layout_marginLeft="10dp"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton android:id="@+id/r45"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:layout_marginLeft="10dp"
+            android:onClick="onRadioButtonClicked"/>
+
+    </RadioGroup>
+    <TextView
+        android:paddingTop="20dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="I feel like I have no one ">
+
+    </TextView>
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="true"
+        android:textAlignment="center">
+
+        <RadioButton android:id="@+id/r51"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:layout_marginLeft="80dp"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton android:id="@+id/r52"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton android:id="@+id/r53"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton android:id="@+id/r54"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:layout_marginLeft="10dp"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton android:id="@+id/r55"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:layout_marginLeft="10dp"
+            android:onClick="onRadioButtonClicked"/>
+
+    </RadioGroup>
+    <TextView
+        android:paddingTop="20dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="I feel like I have no one ">
+
+    </TextView>
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="true"
+        android:textAlignment="center">
+
+        <RadioButton android:id="@+id/r61"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:layout_marginLeft="80dp"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton android:id="@+id/r62"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton android:id="@+id/r63"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton android:id="@+id/r64"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:layout_marginLeft="10dp"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton android:id="@+id/r65"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:layout_marginLeft="10dp"
+            android:onClick="onRadioButtonClicked"/>
+
+    </RadioGroup>
+    <TextView
+        android:paddingTop="20dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="I feel like I have no one ">
+
+    </TextView>
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:baselineAligned="true"
+    android:textAlignment="center">
+
+    <RadioButton android:id="@+id/r71"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:layout_marginLeft="80dp"
+        android:onClick="onRadioButtonClicked"/>
+
+    <RadioButton android:id="@+id/r72"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:onClick="onRadioButtonClicked"/>
+
+    <RadioButton android:id="@+id/r73"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:onClick="onRadioButtonClicked"/>
+
+    <RadioButton android:id="@+id/r74"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:layout_marginLeft="10dp"
+        android:onClick="onRadioButtonClicked"/>
+
+    <RadioButton android:id="@+id/r75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:layout_marginLeft="10dp"
+        android:onClick="onRadioButtonClicked"/>
+
+</RadioGroup>
+    <TextView
+        android:paddingTop="20dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="I feel like I have no one ">
+
+    </TextView>
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="true"
+        android:textAlignment="center">
+
+        <RadioButton android:id="@+id/r81"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:layout_marginLeft="80dp"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton android:id="@+id/r82"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton android:id="@+id/r83"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton android:id="@+id/r84"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:layout_marginLeft="10dp"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton android:id="@+id/r85"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:layout_marginLeft="10dp"
+            android:onClick="onRadioButtonClicked"/>
+
+    </RadioGroup>
     <Button
         android:layout_marginLeft="150dp"
         android:layout_marginTop="20dp"
@@ -202,3 +466,4 @@
 
 </LinearLayout>
 
+</ScrollView>

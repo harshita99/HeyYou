@@ -31,66 +31,63 @@ public class MentalTest extends AppCompatActivity {
 
         // Check which radio button was clicked
         switch(view.getId()) {
-            case R.id.r1:
+            case R.id.r11:
+            case R.id.r21:
+            case R.id.r31:
+            case R.id.r41:
+            case R.id.r51:
+            case R.id.r61:
+            case R.id.r71:
+            case R.id.r81:
                 if (checked)
                     i1+=1;
-                break;
-            case R.id.r2:
-                if (checked)
-                    // Ninjas rule
                     break;
-            case R.id.r3:
+            case R.id.r12:
+            case R.id.r22:
+            case R.id.r32:
+            case R.id.r42:
+            case R.id.r52:
+            case R.id.r62:
+            case R.id.r72:
+            case R.id.r82:
                 if (checked)
-                    // Ninjas rule
+                    i1+=2;
                     break;
-            case R.id.r4:
+            case R.id.r13:
+            case R.id.r23:
+            case R.id.r33:
+            case R.id.r43:
+            case R.id.r53:
+            case R.id.r63:
+            case R.id.r73:
+            case R.id.r83:
                 if (checked)
-                    // Ninjas rule
+                    i1+=3;
                     break;
-            case R.id.r5:
+            case R.id.r14:
+            case R.id.r24:
+            case R.id.r34:
+            case R.id.r44:
+            case R.id.r54:
+            case R.id.r64:
+            case R.id.r74:
+            case R.id.r84:
                 if (checked)
-                    // Ninjas rule
+                    i1+=4;
                     break;
-            case R.id.rr1:
+            case R.id.r15:
+            case R.id.r25:
+            case R.id.r35:
+            case R.id.r45:
+            case R.id.r55:
+            case R.id.r65:
+            case R.id.r75:
+            case R.id.r85:
                 if (checked)
-                    i1+=1;
-                break;
-            case R.id.rr2:
-                if (checked)
-                    // Ninjas rule
+                    i1+=5;
                     break;
-            case R.id.rr3:
-                if (checked)
-                    // Ninjas rule
-                    break;
-            case R.id.rr4:
-                if (checked)
-                    // Ninjas rule
-                    break;
-            case R.id.rr5:
-                if (checked)
-                    // Ninjas rule
-                    break;
-            case R.id.rrr1:
-                if (checked)
-                    i1+=1;
-                break;
-            case R.id.rrr2:
-                if (checked)
-                    // Ninjas rule
-                    break;
-            case R.id.rrr3:
-                if (checked)
-                    // Ninjas rule
-                    break;
-            case R.id.rrr4:
-                if (checked)
-                    // Ninjas rule
-                    break;
-            case R.id.rrr5:
-                if (checked)
-                    // Ninjas rule
-                    break;
+
+
         }
     }
 }

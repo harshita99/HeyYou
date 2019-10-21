@@ -6,6 +6,7 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         final MediaPlayer mp = MediaPlayer.create(this, R.raw.song);
-        Button music = (Button) this.findViewById(R.id.music);
+        final ImageView music = findViewById(R.id.music);
         music.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -27,11 +28,13 @@ public class MainActivity extends AppCompatActivity {
                 if (!mp.isPlaying()) {
                     mp.start();
                     mp.setLooping(true);
-
+                    music.setImageResource(android.R.drawable.ic_lock_silent_mode);
                 }
 
-                else
+                else {
+                    music.setImageResource(android.R.drawable.ic_lock_silent_mode_off);
                     mp.pause();
+                }
             }
         });
     }

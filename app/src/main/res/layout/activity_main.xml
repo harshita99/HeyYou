@@ -25,12 +25,12 @@
         app:layout_constraintTop_toTopOf="parent">
     </TextView>
 
-    <Button
+    <ImageView
         android:id="@+id/music"
         android:layout_width="65dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
-        android:background="@android:drawable/ic_lock_silent_mode_off" />
+        android:src="@android:drawable/ic_lock_silent_mode_off" />
 
     <ImageView
         android:layout_gravity="center"
