@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Quote"></activity>
         <activity android:name=".movie">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -26,14 +27,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Next"></activity>
-        <activity android:name=".MentalTest"></activity>
+        <activity android:name=".Next" />
+        <activity android:name=".MentalTest" />
         <activity android:name=".MainDraw" />
         <activity android:name=".choose" />
         <activity android:name=".writeSomething" />
         <activity android:name=".readJournal" />
         <activity android:name=".DaysList" />
 
+        <receiver android:name=".Receiver2" />
         <receiver android:name=".receiver1" />
     </application>
 

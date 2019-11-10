@@ -16,7 +16,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity {
-    private PendingIntent pendingIntent1;
+    private PendingIntent pendingIntent1,pendingIntent2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,13 +24,24 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Calendar calendar1 = Calendar.getInstance();
         calendar1.set(Calendar.HOUR_OF_DAY, 11);
-        calendar1.set(Calendar.MINUTE, 24);
+        calendar1.set(Calendar.MINUTE, 39);
         calendar1.set(Calendar.SECOND, 0);
         calendar1.set(Calendar.AM_PM,Calendar.PM);
         Intent myIntent1 = new Intent(MainActivity.this, receiver1.class);
         pendingIntent1 = PendingIntent.getBroadcast(MainActivity.this, 0, myIntent1, 0);
         AlarmManager alarmManager1 = (AlarmManager)getSystemService(ALARM_SERVICE);
         alarmManager1.set(AlarmManager.RTC, calendar1.getTimeInMillis(), pendingIntent1);
+
+        Calendar calendar2 = Calendar.getInstance();
+        calendar2.set(Calendar.HOUR_OF_DAY, 11);
+        calendar2.set(Calendar.MINUTE, 39);
+        calendar2.set(Calendar.SECOND, 0);
+        calendar2.set(Calendar.AM_PM,Calendar.PM);
+        Intent myIntent2 = new Intent(MainActivity.this, Receiver2.class);
+        pendingIntent2 = PendingIntent.getBroadcast(MainActivity.this, 1, myIntent2, 0);
+
+        AlarmManager alarmManager2 = (AlarmManager) getSystemService(ALARM_SERVICE);
+        alarmManager2.set(AlarmManager.RTC, calendar2.getTimeInMillis(), pendingIntent2);
 
         final MediaPlayer mp = MediaPlayer.create(this, R.raw.song);
         final ImageView music = findViewById(R.id.music);
