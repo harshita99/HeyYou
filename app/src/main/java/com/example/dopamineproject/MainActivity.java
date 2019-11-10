@@ -56,6 +56,11 @@ public class MainActivity extends AppCompatActivity {
     public void journal(View view ){
 
     }
+    public void next(View v){
+        Intent i = new Intent(this,DaysList.class);
+
+        startActivity(i);
+    }
 
 
 }

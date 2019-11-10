@@ -21,6 +21,10 @@
         <activity android:name=".MentalTest">
         </activity>
         <activity android:name=".MainDraw"></activity>
+        <activity android:name=".choose" />
+        <activity android:name=".writeSomething" />
+        <activity android:name=".readJournal" />
+        <activity android:name=".DaysList" />
     </application>
 
 </manifest>
