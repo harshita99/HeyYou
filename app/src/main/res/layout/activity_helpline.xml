@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_smile">
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text=" Your Mental Health Matters
+    Do you feel depressed, anxious, worried or suicidal? Do you have a question related to your own or someone else's mental health?
+    We are here to help
+    Our trained counselors are qualified and are available day and night. We are here to help answer any questions you might have about mental health. Reach out to us now.
+
+    https://www.vandrevalafoundation.com/">
+
+    </TextView>
+</LinearLayout>
+</ScrollView>

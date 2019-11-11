@@ -24,8 +24,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Calendar calendar1 = Calendar.getInstance();
         calendar1.set(Calendar.HOUR_OF_DAY, 11);
-        calendar1.set(Calendar.MINUTE, 39);
-        calendar1.set(Calendar.SECOND, 0);
+        calendar1.set(Calendar.MINUTE, 39);calendar1.set(Calendar.SECOND, 0);
         calendar1.set(Calendar.AM_PM,Calendar.PM);
         Intent myIntent1 = new Intent(MainActivity.this, receiver1.class);
         pendingIntent1 = PendingIntent.getBroadcast(MainActivity.this, 0, myIntent1, 0);
@@ -78,6 +77,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void journal(View view ){
+
 
     }
     public void next(View v){
