@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.webkit.WebView;
+import android.widget.Toast;
 
 import java.net.URL;
 
@@ -15,6 +16,7 @@ public class movie extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_movie);
+
         handleIntent();
     }
     private void handleIntent()
@@ -29,5 +31,6 @@ public class movie extends AppCompatActivity {
         }
         WebView webView = (WebView)findViewById(R.id.webView);
         webView.loadUrl(url.toString());
+        Toast.makeText(getApplicationContext(),"Choose a movie to feel better",Toast.LENGTH_SHORT).show();
     }
 }

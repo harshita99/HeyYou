@@ -4,6 +4,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
+import android.widget.Toast;
 
 public class Receiver2 extends BroadcastReceiver {
     @Override
@@ -14,6 +15,7 @@ public class Receiver2 extends BroadcastReceiver {
         Log.i("App", "called receiver method");
         try{
             notification1.quoteNotification(context);
+
         }catch(Exception e){
             e.printStackTrace();
         }

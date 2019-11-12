@@ -12,7 +12,7 @@ import android.net.Uri;
 import androidx.core.app.NotificationCompat;
 
 public class notification1 {
-    public static NotificationManager movie;
+    //public static NotificationManager movie;
 
     public static void movieNotification(Context context) {
         NotificationCompat.Builder movie =
@@ -44,7 +44,8 @@ public class notification1 {
         NM1.notify(0, movie.build());
 
     }
-    public static NotificationManager quote;
+
+    //public static NotificationManager quote;
 
     public static void quoteNotification(Context context) {
         NotificationCompat.Builder quote =
@@ -53,9 +54,9 @@ public class notification1 {
                         .setContentTitle("HeyYou!") //set title of notification
                         .setContentText("Quote of the day")//this is notification message
                         .setAutoCancel(true) // makes auto cancel of notification
-                        .setPriority(NotificationCompat.PRIORITY_MAX); //set priority of notification
+                        .setPriority(NotificationCompat.PRIORITY_DEFAULT); //set priority of notification
 
-        Bitmap bitmap_image = BitmapFactory.decodeResource(context.getResources(), R.drawable.icon_background);
+        Bitmap bitmap_image = BitmapFactory.decodeResource(context.getResources(), R.drawable.icon_foreground);
         NotificationCompat.BigPictureStyle s = new NotificationCompat.BigPictureStyle().bigPicture(bitmap_image);
         quote.setStyle(s);
         Intent i1 = new Intent(context, Quote.class);
@@ -72,5 +73,36 @@ public class notification1 {
         // mId allows you to update the notification later on.
 
         NM1.notify(1, quote.build());
+    }
+
+   // public static NotificationManager notif1;
+
+    public static void Notification(Context context) {
+        NotificationCompat.Builder notif1 =
+                new NotificationCompat.Builder(context)
+                        .setSmallIcon(R.drawable.icon_background) //set icon for notification
+                        .setContentTitle("HEY YOU!") //set title of notification
+                        .setContentText("Want to track your mood?")//this is notification message
+                        .setAutoCancel(true) // makes auto cancel of notification
+                        .setPriority(NotificationCompat.PRIORITY_DEFAULT); //set priority of notification
+
+        Bitmap bitmap_image = BitmapFactory.decodeResource(context.getResources(), R.drawable.icon_background);
+        NotificationCompat.BigPictureStyle s = new NotificationCompat.BigPictureStyle().bigPicture(bitmap_image);
+        notif1.setStyle(s);
+
+        Intent i1 = new Intent(context, MainActivity.class);
+        TaskStackBuilder TSB = TaskStackBuilder.create(context);
+        TSB.addParentStack(MainActivity.class);
+        // Adds the Intent that starts the Activity to the top of the stack
+        TSB.addNextIntent(i1);
+        PendingIntent resultPendingIntent =
+                TSB.getPendingIntent(2, PendingIntent.FLAG_UPDATE_CURRENT);
+
+        notif1.setContentIntent(resultPendingIntent);
+
+        NotificationManager NM1 = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
+        // mId allows you to update the notification later on.
+
+        NM1.notify(0, notif1.build());
     }
 }

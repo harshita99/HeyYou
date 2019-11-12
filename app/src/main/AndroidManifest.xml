@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Quote"></activity>
+        <activity android:name=".Quote"/>
         <activity android:name=".movie">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -37,6 +37,7 @@
 
         <receiver android:name=".Receiver2" />
         <receiver android:name=".receiver1" />
+        <receiver android:name=".Receiver3" />
     </application>
 
 </manifest>
