@@ -61,11 +61,11 @@ public class MainActivity extends AppCompatActivity {
                 if (!mp.isPlaying()) {
                     mp.start();
                     mp.setLooping(true);
-                    music.setImageResource(android.R.drawable.ic_lock_silent_mode);
+                    music.setImageResource(android.R.drawable.volume_off);
                 }
 
                 else {
-                    music.setImageResource(android.R.drawable.ic_lock_silent_mode_off);
+                    music.setImageResource(android.R.drawable.volume_up);
                     mp.pause();
                 }
             }
