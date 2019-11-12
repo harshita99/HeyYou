@@ -1,4 +1,4 @@
-package com.example.android.shreya_boss;
+package com.example.dopamineproject;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
