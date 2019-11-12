@@ -73,7 +73,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void trackmood(View view ){
-
+        Intent x = new Intent(this, TrackMood.class);
+        startActivity(x);
     }
 
     public void drawingpad(View view ){

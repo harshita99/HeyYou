@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "204079416732-e6roik2qkn7tdofh3mc950jcj1c4g3g9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dopamineproject",
+            "certificate_hash": "43092ebe9c093af9fc703f3495d16f6ddadaa1ee"
+          }
+        },
+        {
           "client_id": "204079416732-lnhmki04vau8p180p4po3mn6h4h1na5q.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

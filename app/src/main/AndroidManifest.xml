@@ -34,7 +34,7 @@
         <activity android:name=".writeSomething" />
         <activity android:name=".readJournal" />
         <activity android:name=".DaysList" />
-
+        <activity android:name=".TrackMood"/>
         <receiver android:name=".Receiver2" />
         <receiver android:name=".receiver1" />
         <receiver android:name=".Receiver3" />

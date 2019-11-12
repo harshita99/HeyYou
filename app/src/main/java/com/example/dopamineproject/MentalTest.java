@@ -17,7 +17,6 @@ public class MentalTest extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mental);
-        Toast.makeText(getApplicationContext(),"Track your mood",Toast.LENGTH_SHORT).show();
     }
 
     public void goToNextScreen(View view){
