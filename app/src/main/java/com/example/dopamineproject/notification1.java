@@ -17,13 +17,13 @@ public class notification1 {
     public static void movieNotification(Context context) {
         NotificationCompat.Builder movie =
                 new NotificationCompat.Builder(context)
-                        .setSmallIcon(R.drawable.icon_background) //set icon for notification
+                        .setSmallIcon(R.drawable.icon_foreground) //set icon for notification
                         .setContentTitle("Want to watch a movie?") //set title of notification
                         .setContentText("Here are some movies to watch when you're sad,glum or bummed out.")//this is notification message
                         .setAutoCancel(true) // makes auto cancel of notification
                         .setPriority(NotificationCompat.PRIORITY_DEFAULT); //set priority of notification
 
-        Bitmap bitmap_image = BitmapFactory.decodeResource(context.getResources(), R.drawable.icon_background);
+        Bitmap bitmap_image = BitmapFactory.decodeResource(context.getResources(), R.drawable.icon_foreground);
         NotificationCompat.BigPictureStyle s = new NotificationCompat.BigPictureStyle().bigPicture(bitmap_image);
         movie.setStyle(s);
 
@@ -50,7 +50,7 @@ public class notification1 {
     public static void quoteNotification(Context context) {
         NotificationCompat.Builder quote =
                 new NotificationCompat.Builder(context)
-                        .setSmallIcon(R.drawable.icon_background) //set icon for notification
+                        .setSmallIcon(R.drawable.icon_foreground) //set icon for notification
                         .setContentTitle("HeyYou!") //set title of notification
                         .setContentText("Quote of the day")//this is notification message
                         .setAutoCancel(true) // makes auto cancel of notification
@@ -80,13 +80,13 @@ public class notification1 {
     public static void Notification(Context context) {
         NotificationCompat.Builder notif1 =
                 new NotificationCompat.Builder(context)
-                        .setSmallIcon(R.drawable.icon_background) //set icon for notification
+                        .setSmallIcon(R.drawable.icon_foreground) //set icon for notification
                         .setContentTitle("HEY YOU!") //set title of notification
                         .setContentText("Want to track your mood?")//this is notification message
                         .setAutoCancel(true) // makes auto cancel of notification
                         .setPriority(NotificationCompat.PRIORITY_DEFAULT); //set priority of notification
 
-        Bitmap bitmap_image = BitmapFactory.decodeResource(context.getResources(), R.drawable.icon_background);
+        Bitmap bitmap_image = BitmapFactory.decodeResource(context.getResources(), R.drawable.icon_foreground);
         NotificationCompat.BigPictureStyle s = new NotificationCompat.BigPictureStyle().bigPicture(bitmap_image);
         notif1.setStyle(s);
 
