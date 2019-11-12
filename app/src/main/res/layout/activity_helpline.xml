@@ -20,6 +20,7 @@
 
 
     <TextView
+        android:padding="15dp"
         android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
@@ -32,11 +33,42 @@
         https://www.vandrevalafoundation.com/">
 
 </TextView>
+    <LinearLayout
+        android:layout_marginTop=""
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+
     <Button
         android:id="@+id/callbutton"
         android:layout_width="65dp"
+
         android:layout_height="wrap_content"
+
         android:background="@android:drawable/sym_action_call">
     </Button>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Dial 1800 2333 330">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <WebView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/webview">
+
+    </WebView>
+
+
+
 </LinearLayout>
 </ScrollView>

@@ -52,7 +52,7 @@
         android:layout_height="wrap_content"
         android:text="Track your mood"
         android:id="@+id/testbtn"
-        android:onClick="mentaltest"
+        android:onClick="trackmood"
         android:textStyle="bold">
     </Button>
 
@@ -82,7 +82,7 @@
         android:layout_height="wrap_content"
         android:text="Test your mental health"
         android:id="@+id/moodtrackbtn"
-        android:onClick="trackmood">
+        android:onClick="mentaltest">
     </Button>
     <Button
         android:id="@+id/fill_journal"
@@ -105,7 +105,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:background="@drawable/rounded_button"
-        android:onClick="journal"
+        android:onClick="getHelp"
         android:padding="15dp"
         android:text="Helpline"
         android:textAlignment="center"

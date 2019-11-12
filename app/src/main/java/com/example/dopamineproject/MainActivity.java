@@ -87,8 +87,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(j);
     }
 
-    public void journal(View view ){
-
+    public void getHelp(View view ){
+        Intent z = new Intent(this,Helpline.class);
+        startActivity(z);
 
     }
     public void next(View v){
