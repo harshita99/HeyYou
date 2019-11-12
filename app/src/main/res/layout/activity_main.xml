@@ -30,13 +30,15 @@
         android:layout_width="65dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
-        android:src="@android:drawable/ic_lock_silent_mode_off" />
+        android:src="@drawable/volume_up" />
 
     <ImageView
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_smile"></ImageView>
+        android:src="@drawable/ic_smile">
+
+    </ImageView>
 
 
     <Button
