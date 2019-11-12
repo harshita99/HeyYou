@@ -24,8 +24,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Calendar calendar1 = Calendar.getInstance();
-        calendar1.set(Calendar.HOUR_OF_DAY, 7);
-        calendar1.set(Calendar.MINUTE, 17);
+        calendar1.set(Calendar.HOUR_OF_DAY, 8);
+        calendar1.set(Calendar.MINUTE, 5);
         calendar1.set(Calendar.SECOND, 0);
         calendar1.set(Calendar.AM_PM,Calendar.PM);
         Intent myIntent1 = new Intent(MainActivity.this, receiver1.class);
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
         Calendar calendar2 = Calendar.getInstance();
         calendar2.set(Calendar.HOUR_OF_DAY, 7);
-        calendar2.set(Calendar.MINUTE,18);
+        calendar2.set(Calendar.MINUTE,55);
         calendar2.set(Calendar.SECOND, 0);
         calendar2.set(Calendar.AM_PM,Calendar.PM);
         Intent myIntent2 = new Intent(MainActivity.this, Receiver2.class);
