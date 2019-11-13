@@ -8,18 +8,19 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="How are you feeling today?"
-        android:textColor="#fff"
-        android:textSize="26sp"
-        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"
         android:fontFamily=""
-        android:layout_gravity="center"/>
+        android:text="How are you feeling today?"
+        android:textColor="#685C5C"
+        android:textSize="26sp"
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="70dp"
+        android:background="#FCF5BB"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -34,9 +35,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="100dp"
                 android:background="@android:color/transparent"
+                android:onClick="mood"
                 android:scaleType="centerInside"
-                android:src="@drawable/crying"
-                android:onClick="mood"/>
+                android:src="@drawable/crying" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -44,7 +45,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="8dp"
                 android:text="Terrible"
-                android:textColor="#fff"/>
+                android:textStyle="bold"/>
         </LinearLayout>
 
         <LinearLayout
@@ -59,9 +60,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="100dp"
                 android:background="@android:color/transparent"
+                android:onClick="mood"
                 android:scaleType="centerInside"
-                android:src="@drawable/sad"
-                android:onClick="mood"/>
+                android:src="@drawable/sad" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -69,7 +70,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="8dp"
                 android:text="Bad"
-                android:textColor="#fff"/>
+                android:textStyle="bold"/>
         </LinearLayout>
 
         <LinearLayout
@@ -84,9 +85,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="100dp"
                 android:background="@android:color/transparent"
+                android:onClick="mood"
                 android:scaleType="centerInside"
-                android:src="@drawable/neutral"
-                android:onClick="mood"/>
+                android:src="@drawable/neutral" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -94,7 +95,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="8dp"
                 android:text="Okay"
-                android:textColor="#fff"/>
+                android:textStyle="bold"/>
         </LinearLayout>
 
         <LinearLayout
@@ -109,9 +110,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="100dp"
                 android:background="@android:color/transparent"
+                android:onClick="mood"
                 android:scaleType="centerInside"
-                android:src="@drawable/happy"
-                android:onClick="mood"/>
+                android:src="@drawable/happy" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -119,7 +120,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="8dp"
                 android:text="Good"
-                android:textColor="#fff"/>
+                android:textStyle="bold"/>
         </LinearLayout>
 
         <LinearLayout
@@ -135,17 +136,17 @@
                 android:layout_height="100dp"
                 android:layout_gravity="center"
                 android:background="@android:color/transparent"
+                android:onClick="mood"
                 android:scaleType="centerInside"
-                android:src="@drawable/vhappy"
-                android:onClick="mood"/>
+                android:src="@drawable/vhappy" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="8dp"
-                android:text="Awesome"
-                android:textColor="#fff"/>
+                android:textStyle="bold"
+                android:text="Awesome" />
         </LinearLayout>
     </LinearLayout>
 

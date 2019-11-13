@@ -42,9 +42,11 @@ public class Helpline extends AppCompatActivity {
 
                 }
             });
-
-
-
+    }
+    public void web_View_Link(View view)
+    {
+        Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.vandrevalafoundation.com/"));
+        startActivity(i);
     }
 
 }

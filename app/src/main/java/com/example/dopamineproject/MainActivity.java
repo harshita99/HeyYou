@@ -24,20 +24,20 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Calendar calendar1 = Calendar.getInstance();
-        calendar1.set(Calendar.HOUR_OF_DAY, 8);
-        calendar1.set(Calendar.MINUTE, 5);
+        calendar1.set(Calendar.HOUR_OF_DAY, 2);
+        calendar1.set(Calendar.MINUTE, 9);
         calendar1.set(Calendar.SECOND, 0);
-        calendar1.set(Calendar.AM_PM,Calendar.PM);
+        calendar1.set(Calendar.AM_PM,Calendar.AM);
         Intent myIntent1 = new Intent(MainActivity.this, receiver1.class);
         pendingIntent1 = PendingIntent.getBroadcast(MainActivity.this, 0, myIntent1, 0);
         AlarmManager alarmManager1 = (AlarmManager)getSystemService(ALARM_SERVICE);
         alarmManager1.set(AlarmManager.RTC, calendar1.getTimeInMillis(), pendingIntent1);
 
         Calendar calendar2 = Calendar.getInstance();
-        calendar2.set(Calendar.HOUR_OF_DAY, 7);
-        calendar2.set(Calendar.MINUTE,55);
+        calendar2.set(Calendar.HOUR_OF_DAY, 2);
+        calendar2.set(Calendar.MINUTE,9);
         calendar2.set(Calendar.SECOND, 0);
-        calendar2.set(Calendar.AM_PM,Calendar.PM);
+        calendar2.set(Calendar.AM_PM,Calendar.AM);
         Intent myIntent2 = new Intent(MainActivity.this, Receiver2.class);
         pendingIntent2 = PendingIntent.getBroadcast(MainActivity.this, 1, myIntent2, 0);
         AlarmManager alarmManager2 = (AlarmManager)getSystemService(ALARM_SERVICE);
