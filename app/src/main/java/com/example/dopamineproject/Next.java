@@ -24,7 +24,7 @@ public class Next extends AppCompatActivity {
         Intent i = getIntent();
 
         Integer s = i.getExtras().getInt("Score");
-        Log.v("Print Message","Your score is "+s);
+        Log.v("Print Message","Your score is "+s+"\n");
 
         if (s<9){
             x="None to mild depression." + "\n"+
