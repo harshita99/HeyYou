@@ -11,8 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Quote"/>
-        <activity android:name=".movie">
+        <activity android:name=".Quote"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".movie"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
@@ -22,25 +24,27 @@
                 <data android:scheme="https" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Next" />
-        <activity android:name=".MentalTest" />
+        <activity android:name=".Next"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".MentalTest" android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".MainDraw" />
-        <activity android:name=".choose" />
-        <activity android:name=".writeSomething" />
-        <activity android:name=".readJournal" />
-        <activity android:name=".DaysList" />
-        <activity android:name=".TrackMood"/>
-        <receiver android:name=".Receiver2" />
-        <receiver android:name=".receiver1" />
-        <receiver android:name=".Receiver3" />
-        <activity android:name=".Helpline"/>
+        <activity android:name=".choose" android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".writeSomething" android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".readJournal" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".DaysList" android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".TrackMood" android:theme="@style/AppTheme.NoActionBar"/>
+        <receiver android:name=".Receiver2" android:theme="@style/AppTheme.NoActionBar"/>
+        <receiver android:name=".receiver1" android:theme="@style/AppTheme.NoActionBar"/>
+        <receiver android:name=".Receiver3" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Helpline" android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>
