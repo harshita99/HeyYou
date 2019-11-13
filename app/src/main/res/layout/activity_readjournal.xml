@@ -6,20 +6,26 @@
 
     <TextView
         android:id="@+id/readjournal"
+        android:layout_marginTop="30dp"
+        android:padding="40dp"
+        android:textStyle="bold|italic"
+        android:fontFamily="sans-serif"
+        android:textColor="#FFA122"
         android:layout_width="match_parent"
         android:layout_height="431dp" />
 
     <Button
         android:id="@+id/read"
         android:layout_width="wrap_content"
-        android:layout_height="32dp"
+        android:layout_height="50dp"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:background="@drawable/rounded_button"
         android:gravity="center"
         android:onClick="read1"
         android:padding="15dp"
-        android:text="read"
+        android:text="Read"
+        android:textColor="#fff"
         />
 
 </LinearLayout>

@@ -94,6 +94,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:padding="15dp"
+        android:textStyle="bold"
         android:textColor="@android:color/white">
 
     </Button>

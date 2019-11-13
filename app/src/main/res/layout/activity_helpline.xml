@@ -9,53 +9,56 @@
     android:layout_height="match_parent"
     android:background="@drawable/gradient">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Need some help?"
+        android:textColor="#fff"
+        android:textSize="35dp"
+        android:textStyle="italic|bold" />
+
 
     <ImageView
-        android:padding="10dp"
         android:layout_width="wrap_content"
-        android:layout_height="457dp"
+        android:layout_height="350dp"
+        android:padding="10dp"
         android:src="@drawable/mental_health">
 
     </ImageView>
 
-
     <TextView
-        android:padding="15dp"
-        android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:fontFamily="sans-serif"
+        android:padding="15dp"
+        android:text="Do you feel depressed, anxious, worried or suicidal? Do you have a question related to your own or someone else's mental health?\nWe are here to help.\nOur trained counselors are qualified and are available day and night. We are here to help answer any questions you might have about mental health.\nReach out to us now:\nhttps://www.vandrevalafoundation.com/"
         android:textSize="20dp"
-        android:text="Do you feel depressed, anxious, worried or suicidal? Do you have a question related to your own or someone else's mental health?
-        We are here to help
-        Our trained counselors are qualified and are available day and night. We are here to help answer any questions you might have about mental health. Reach out to us now.
+        android:textStyle="bold|italic">
 
-        https://www.vandrevalafoundation.com/">
+    </TextView>
 
-</TextView>
     <LinearLayout
-        android:layout_marginTop=""
         android:layout_width="wrap_content"
-        android:orientation="horizontal"
         android:layout_height="wrap_content"
-        android:layout_gravity="center">
+        android:layout_gravity="center"
+        android:orientation="horizontal">
 
 
-    <Button
-        android:id="@+id/callbutton"
-        android:layout_width="65dp"
-
-        android:layout_height="wrap_content"
-
-        android:background="@android:drawable/sym_action_call">
-    </Button>
+        <Button
+            android:id="@+id/call_button"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/sym_action_call" />
 
         <TextView
-            android:layout_marginLeft="10dp"
+            android:id="@+id/phone_number"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
-            android:text="Dial 1800 2333 330">
+            android:layout_marginLeft="10dp"
+            android:text="1800 2333 330">
 
         </TextView>
 
@@ -65,7 +68,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/webview">
-
     </WebView>
 
 

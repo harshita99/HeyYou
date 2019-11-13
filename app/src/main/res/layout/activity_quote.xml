@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Quote">
+    tools:context=".Quote" android:background="@drawable/gradient">
     <TextView
         android:id="@+id/quote"
         android:layout_width="wrap_content"
@@ -16,7 +16,7 @@
         android:layout_marginRight="195dp"
         android:layout_marginBottom="431dp"
         android:text="TextView"
-        android:textColor="#D7E91E63"
+        android:textColor="#FFA122"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

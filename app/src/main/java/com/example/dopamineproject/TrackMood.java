@@ -47,6 +47,6 @@ public class TrackMood extends AppCompatActivity {
                 break;
         }
         Log.v("Print Message","Hello "+score);
-        Toast.makeText(this, "Hello "+score, Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Hello "+score, Toast.LENGTH_SHORT).show();
     }
 }

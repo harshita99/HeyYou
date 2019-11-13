@@ -32,7 +32,7 @@ public class DaysList extends AppCompatActivity {
         days.add("Wednesday");
         days.add("Thursday");
         days.add("Friday");
-        days.add("Nisha");
+        days.add("Saturday");
 
         listView = findViewById(R.id.listView);
 
