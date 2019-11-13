@@ -2,6 +2,7 @@ package com.example.dopamineproject;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.RadioButton;
@@ -12,15 +13,29 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MentalTest extends AppCompatActivity {
     Integer i1=0;
     String s="0";
-
+    int ans;
+    SharedPreferences sharedPref;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mental);
+        sharedPref = this.getSharedPreferences(
+                "com.example.dopamineproject.PREFERENCE_FILE_KEY", Context.MODE_PRIVATE);
     }
 
     public void goToNextScreen(View view){
         Intent i = new Intent(this,Next.class);
+        //SharedPreferences.Editor editor = sharedPref.edit();
+        //Save Key and value using editor object
+        //editor.putString("NameKey",s);
+        //Commit the Changes
+        //editor.commit();
+        //String previousdata = sharedPref.getString("NameKey","Not Set Yet");
+        //if (previousdata=="0")
+        //    ans=i1;
+        //else
+        //    ans=Integer.parseInt(previousdata);
+
         i.putExtra("Score", i1);
         startActivity(i);
     }

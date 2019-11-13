@@ -52,7 +52,7 @@
             android:id="@+id/call_button"
             android:layout_width="43dp"
             android:layout_height="23dp"
-            android:layout_marginLeft="0"
+            android:layout_marginLeft="10dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/phone_receiver" />
 

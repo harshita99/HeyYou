@@ -16,11 +16,13 @@ public class Next extends AppCompatActivity {
         setContentView(R.layout.activity_next);
         txt = (TextView)findViewById(R.id.textView1);
         handleIntent();
+
     }
 
     private void handleIntent() {
 
         Intent i = getIntent();
+
         Integer s = i.getExtras().getInt("Score");
         Log.v("Print Message","Your score is "+s);
 
