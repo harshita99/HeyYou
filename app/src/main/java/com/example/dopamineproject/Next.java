@@ -24,10 +24,10 @@ public class Next extends AppCompatActivity {
         Intent i = getIntent();
 
         Integer s = i.getExtras().getInt("Score");
-        Log.v("Print Message","Your score is "+s+"\n");
+        Log.v("Print Message","Your score is "+s);
 
         if (s<9){
-            x="None to mild depression." + "\n"+
+            x="\n"+"None to mild depression." + "\n"+
                     "Congratulations! You've answered this quick depression quiz in a manner that suggests that while you may occasionally be experiencing some depressive symptoms from time to time, you're not likely to be suffering a major depressive episode at present. Most people experience depressive feelings from time to time in their lives -- this is normal and expected.";
         }
         else if(s>=10 && s<19){
