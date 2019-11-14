@@ -3,6 +3,7 @@ package com.example.dopamineproject;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -26,8 +27,7 @@ public class writeSomething extends AppCompatActivity {
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference ref = database.getReference().child(day);
-
+        Toast.makeText(this,"Entry Submitted.",Toast.LENGTH_SHORT).show();
         ref.setValue(s);
-
     }
 }

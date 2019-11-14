@@ -2,20 +2,17 @@ package com.example.dopamineproject;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
-import android.content.Context;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.RadioButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Calendar;
 
-public class LoginActivity extends AppCompatActivity {
+public class Home_page extends AppCompatActivity {
     private PendingIntent pendingIntent1,pendingIntent2,pendingIntent3;
 
     @Override
@@ -24,33 +21,34 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Calendar calendar1 = Calendar.getInstance();
-        calendar1.set(Calendar.HOUR_OF_DAY, 2);
-        calendar1.set(Calendar.MINUTE, 9);
+        calendar1.set(Calendar.HOUR_OF_DAY, 6);
+        calendar1.set(Calendar.MINUTE, 36);
         calendar1.set(Calendar.SECOND, 0);
-        calendar1.set(Calendar.AM_PM,Calendar.AM);
-        Intent myIntent1 = new Intent(LoginActivity.this, receiver1.class);
-        pendingIntent1 = PendingIntent.getBroadcast(LoginActivity.this, 0, myIntent1, 0);
+        calendar1.set(Calendar.AM_PM,Calendar.PM);
         AlarmManager alarmManager1 = (AlarmManager)getSystemService(ALARM_SERVICE);
         alarmManager1.set(AlarmManager.RTC, calendar1.getTimeInMillis(), pendingIntent1);
+        Intent myIntent1 = new Intent(Home_page.this, receiver1.class);
+        pendingIntent1 = PendingIntent.getBroadcast(Home_page.this, 0, myIntent1, 0);
 
         Calendar calendar2 = Calendar.getInstance();
-        calendar2.set(Calendar.HOUR_OF_DAY, 2);
-        calendar2.set(Calendar.MINUTE,9);
+        calendar2.set(Calendar.HOUR_OF_DAY, 6);
+        calendar2.set(Calendar.MINUTE,37);
         calendar2.set(Calendar.SECOND, 0);
-        calendar2.set(Calendar.AM_PM,Calendar.AM);
-        Intent myIntent2 = new Intent(LoginActivity.this, Receiver2.class);
-        pendingIntent2 = PendingIntent.getBroadcast(LoginActivity.this, 1, myIntent2, 0);
+        calendar2.set(Calendar.AM_PM,Calendar.PM);
         AlarmManager alarmManager2 = (AlarmManager)getSystemService(ALARM_SERVICE);
         alarmManager2.set(AlarmManager.RTC, calendar2.getTimeInMillis(), pendingIntent2);
+        Intent myIntent2 = new Intent(Home_page.this, Receiver2.class);
+        pendingIntent2 = PendingIntent.getBroadcast(Home_page.this, 1, myIntent2, 0);
+
 
         Calendar calendar3 = Calendar.getInstance();
         calendar3.setTimeInMillis(System.currentTimeMillis());
         calendar3.add(Calendar.MINUTE,2);
         //calendar3.add(Calendar.HOUR,24);
-        Intent myIntent3 = new Intent(LoginActivity.this, Receiver3.class);
-        pendingIntent3 = PendingIntent.getBroadcast(LoginActivity.this, 2, myIntent3, 0);
-        AlarmManager alarmManager3 = (AlarmManager) getSystemService(ALARM_SERVICE);
-        alarmManager3.setInexactRepeating(AlarmManager.RTC, calendar3.getTimeInMillis(), AlarmManager.INTERVAL_DAY,pendingIntent3);
+        AlarmManager alarmManager3 = (AlarmManager)getSystemService(ALARM_SERVICE);
+        alarmManager3.set(AlarmManager.RTC, calendar3.getTimeInMillis(), pendingIntent3);
+        Intent myIntent3 = new Intent(Home_page.this, Receiver3.class);
+        pendingIntent3 = PendingIntent.getBroadcast(Home_page.this, 2, myIntent3, 0);
 
         final MediaPlayer mp = MediaPlayer.create(this, R.raw.song);
         final ImageView music = findViewById(R.id.music);

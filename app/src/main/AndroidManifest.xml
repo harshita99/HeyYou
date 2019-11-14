@@ -83,7 +83,7 @@
         <activity
             android:name=".Helpline"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".LoginActivity"
+        <activity android:name=".Home_page"
             android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 

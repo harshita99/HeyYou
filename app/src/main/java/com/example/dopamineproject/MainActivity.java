@@ -1,14 +1,11 @@
 package com.example.dopamineproject;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
-import com.example.dopamineproject.R;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -31,8 +28,8 @@ public class MainActivity extends AppCompatActivity{
             public void onClick(View view) {
                 if (view==submit){
                     if (verify()){
-                        toast("Login Successful");
-                        Intent intent=new Intent(getApplicationContext(),LoginActivity.class);
+                        toast("Login Successful.");
+                        Intent intent=new Intent(getApplicationContext(), Home_page.class);
                         startActivity(intent);
                         finish();
                     }
@@ -45,19 +42,19 @@ public class MainActivity extends AppCompatActivity{
             public void onClick(View view) {
                 if(view==sign_up){
                     if (phno.getText().toString().isEmpty()){
-                        toast("enter phone number");
+                        toast("Enter phone number.");
                     }
                     else if(phno.getText().toString().length()!=10 ){
-                        toast("Enter a 10 digit number");
+                        toast("Enter a 10 digit number.");
                     }
                     else if(pass.getText().toString().isEmpty() ){
-                        toast("enter password");
+                        toast("Enter password.");
                     }
                     else if(pass.getText().toString().length()<6) {
-                        toast("enter a password containing atleast 6 characters");
+                        toast("Enter a password containing atleast 6 characters.");
                     }
-                    toast("SignUp Successful");
-                    Intent intent=new Intent(getApplicationContext(),LoginActivity.class);
+                    toast("SignUp Successful.");
+                    Intent intent=new Intent(getApplicationContext(), Home_page.class);
                     startActivity(intent);
                     finish();
                 }
@@ -72,23 +69,23 @@ public class MainActivity extends AppCompatActivity{
 
     private boolean verify(){
         if (phno.getText().toString().isEmpty()){
-                toast("enter phone number");
+                toast("Enter phone number.");
                 return false;
             }
             else if(phno.getText().toString().length()!=10 ){
-                toast("Enter a 10 digit number");
+                toast("Enter a 10 digit number.");
                 return false;
             }
             else if(pass.getText().toString().isEmpty() ){
-                toast("enter password");
+                toast("Enter password.");
                 return false;
             }
             else if(pass.getText().toString().length()<6){
-                toast("enter a password containing atleast 6 characters");
+                toast("Enter a password containing atleast 6 characters.");
                 return false;
         }
         else if(pass.getText().toString()=="12345678"){
-            toast("password is not correct");
+            toast("Incorrect password.");
             return false;
         }
         else {

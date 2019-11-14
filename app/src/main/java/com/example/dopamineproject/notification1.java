@@ -90,7 +90,7 @@ public class notification1 {
         NotificationCompat.BigPictureStyle s = new NotificationCompat.BigPictureStyle().bigPicture(bitmap_image);
         notif1.setStyle(s);
 
-        Intent i1 = new Intent(context, MainActivity.class);
+        Intent i1 = new Intent(context, Home_page.class);
         TaskStackBuilder TSB = TaskStackBuilder.create(context);
         TSB.addParentStack(MainActivity.class);
         // Adds the Intent that starts the Activity to the top of the stack

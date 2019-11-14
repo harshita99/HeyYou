@@ -34,7 +34,7 @@
         android:layout_height="match_parent"
         android:fontFamily="sans-serif"
         android:padding="15dp"
-        android:text="Do you feel depressed, anxious, worried or suicidal? Do you have a question related to your own or someone else's mental health?\nWe are here to help.\nOur trained counselors are qualified and are available day and night. We are here to help answer any questions you might have about mental health.\nReach out to us now:\nhttps://www.vandrevalafoundation.com/"
+        android:text="Do you feel depressed, anxious, worried or suicidal? Do you have a question related to your own or someone else's mental health?\nWe are here to help.\nOur trained counselors are qualified and are available day and night. We are here to help answer any questions you might have about mental health.\nReach out to us now:"
         android:textSize="20dp"
         android:textStyle="bold|italic">
 
@@ -69,10 +69,10 @@
 
         <Button
             android:id="@+id/call_button"
-            android:layout_width="43dp"
-            android:layout_height="23dp"
+            android:layout_width="27dp"
+            android:layout_height="25dp"
             android:layout_marginLeft="10dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="20dp"
             android:background="@drawable/phone_receiver" />
 
         <TextView
