@@ -7,7 +7,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="125sp"
-        android:layout_marginTop="30sp"
+        android:layout_marginTop="50dp"
         android:gravity="center"
         android:src="@drawable/ic_smile" />
 
@@ -17,7 +17,7 @@
         android:layout_marginTop="20sp"
         android:text="Hey You!"
         android:textColor="#ffffff"
-        android:textSize="25sp"
+        android:textSize="35dp"
         android:textStyle="bold"
         android:fontFamily="casual"
         android:gravity="center"
@@ -59,7 +59,7 @@
 
         <LinearLayout
             android:layout_width="300sp"
-            android:layout_height="50sp"
+            android:layout_height="100sp"
             android:layout_gravity="center"
             android:layout_marginTop="30sp"
             android:orientation="horizontal"
@@ -69,15 +69,29 @@
                 android:id="@+id/submit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
                 android:background="@drawable/rounded_button"
                 android:gravity="center_horizontal"
                 android:padding="10dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="110dp"
-                android:text="Submit"
+                android:text="Login"
                 android:textColor="#ffffff"
                 android:textSize="17sp"
                 android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/sign_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/rounded_button"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="Sign_up"
+                android:textColor="#ffffff"
+                android:textSize="17sp"
+                android:textStyle="bold"  />
 
         </LinearLayout>
 

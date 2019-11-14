@@ -1,68 +1,102 @@
 package com.example.dopamineproject;
 
+import android.app.AlarmManager;
+import android.app.PendingIntent;
+import android.content.Context;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.Toast;
-
-import com.example.dopamineproject.R;
+import android.widget.ImageView;
+import android.widget.RadioButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class LoginActivity extends AppCompatActivity implements View.OnClickListener{
-    private Button submit;
-    private EditText phno;
-    private EditText pass;
+import java.util.Calendar;
+
+public class LoginActivity extends AppCompatActivity {
+    private PendingIntent pendingIntent1,pendingIntent2,pendingIntent3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        phno=findViewById(R.id.phno);
-        pass=findViewById(R.id.pass);
-        submit=findViewById(R.id.submit);
-        submit.setOnClickListener(this);
-    }
+        Calendar calendar1 = Calendar.getInstance();
+        calendar1.set(Calendar.HOUR_OF_DAY, 2);
+        calendar1.set(Calendar.MINUTE, 9);
+        calendar1.set(Calendar.SECOND, 0);
+        calendar1.set(Calendar.AM_PM,Calendar.AM);
+        Intent myIntent1 = new Intent(LoginActivity.this, receiver1.class);
+        pendingIntent1 = PendingIntent.getBroadcast(LoginActivity.this, 0, myIntent1, 0);
+        AlarmManager alarmManager1 = (AlarmManager)getSystemService(ALARM_SERVICE);
+        alarmManager1.set(AlarmManager.RTC, calendar1.getTimeInMillis(), pendingIntent1);
 
-    private void toast(String m){
-        Toast.makeText(LoginActivity.this,m,Toast.LENGTH_SHORT).show();
-    }
+        Calendar calendar2 = Calendar.getInstance();
+        calendar2.set(Calendar.HOUR_OF_DAY, 2);
+        calendar2.set(Calendar.MINUTE,9);
+        calendar2.set(Calendar.SECOND, 0);
+        calendar2.set(Calendar.AM_PM,Calendar.AM);
+        Intent myIntent2 = new Intent(LoginActivity.this, Receiver2.class);
+        pendingIntent2 = PendingIntent.getBroadcast(LoginActivity.this, 1, myIntent2, 0);
+        AlarmManager alarmManager2 = (AlarmManager)getSystemService(ALARM_SERVICE);
+        alarmManager2.set(AlarmManager.RTC, calendar2.getTimeInMillis(), pendingIntent2);
 
-    private boolean verify(){
-        if (phno.getText().toString().isEmpty()){
-            toast("enter phone number");
-            return false;
-        }
-        else if(phno.getText().toString().length()!=10 ){
-            toast("Enter a 10 digit number");
-            return false;
-        }
-        else if(pass.getText().toString().isEmpty() ){
-            toast("enter password");
-            return false;
-        }
-        else if(pass.getText().toString().length()<6){
-            toast("enter a password containing atleast 6 characters");
-            return false;
-        }
-        else {
-            return true;
-        }
-    }
+        Calendar calendar3 = Calendar.getInstance();
+        calendar3.setTimeInMillis(System.currentTimeMillis());
+        calendar3.add(Calendar.MINUTE,2);
+        //calendar3.add(Calendar.HOUR,24);
+        Intent myIntent3 = new Intent(LoginActivity.this, Receiver3.class);
+        pendingIntent3 = PendingIntent.getBroadcast(LoginActivity.this, 2, myIntent3, 0);
+        AlarmManager alarmManager3 = (AlarmManager) getSystemService(ALARM_SERVICE);
+        alarmManager3.setInexactRepeating(AlarmManager.RTC, calendar3.getTimeInMillis(), AlarmManager.INTERVAL_DAY,pendingIntent3);
 
-    @Override
-    public void onClick(View view){
-        if (view==submit){
-            if (verify()){
-                toast("Login Successful");
-                Intent intent=new Intent(LoginActivity.this,MainActivity.class);
-                startActivity(intent);
-                finish();
+        final MediaPlayer mp = MediaPlayer.create(this, R.raw.song);
+        final ImageView music = findViewById(R.id.music);
+        music.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if (!mp.isPlaying()) {
+                    mp.start();
+                    mp.setLooping(true);
+                    music.setImageResource(R.drawable.volume_off);
+                }
+
+                else {
+                    music.setImageResource(R.drawable.volume_up);
+                    mp.pause();
+                }
             }
-        }
+        });
     }
+
+    public void trackmood(View view ){
+        Intent x = new Intent(this, TrackMood.class);
+        startActivity(x);
+    }
+
+    public void drawingpad(View view ){
+        Intent k = new Intent(this,MainDraw.class);
+        startActivity(k);
+
+    }
+    public void mentaltest(View view ){
+        Intent j = new Intent(this,MentalTest.class);
+        startActivity(j);
+    }
+
+    public void getHelp(View view ){
+        Intent z = new Intent(this,Helpline.class);
+        startActivity(z);
+
+    }
+    public void next(View v){
+        Intent i = new Intent(this,DaysList.class);
+
+        startActivity(i);
+    }
+
 
 }
